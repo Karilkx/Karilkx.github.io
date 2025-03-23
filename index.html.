@@ -4,27 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>May I Court You?</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        #crying-cat {
-            display: none;
-            width: 200px;
-            margin-top: 20px;
-        }
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <h2 id="question">May I court you?</h2>
     <button class="button" onclick="firstYes()">Yes</button>
     <button class="button" onclick="firstNo()">No</button>
@@ -37,41 +19,6 @@
 
     <img id="crying-cat" src="https://i.pinimg.com/originals/41/84/ed/4184ed84c5154640cb94ff825484848b.jpg" alt="Crying Cat">
 
-    <script>
-        function firstYes() {
-            document.getElementById("question").style.display = "none";
-            document.getElementById("follow-up").style.display = "block";
-            document.getElementById("follow-up-question").innerText = "Are you sure? 🤩";
-            document.getElementById("option1").innerText = "Yes";
-            document.getElementById("option2").innerText = "Joke";
-        }
-
-        function firstNo() {
-            document.getElementById("question").style.display = "none";
-            document.getElementById("follow-up").style.display = "block";
-            document.getElementById("follow-up-question").innerText = "Pls?";
-            document.getElementById("option1").innerText = "Cge na nga";
-            document.getElementById("option2").innerText = "Ayuko";
-        }
-
-        function option1Click() {
-            alert("Yay! 😍");
-        }
-
-        function option2Click() {
-            let question = document.getElementById("follow-up-question").innerText;
-            
-            if (question === "Pls?") {
-                document.getElementById("follow-up-question").innerText = "Awa nalang?";
-                document.getElementById("option1").innerText = "Fine...";
-                document.getElementById("option2").innerText = "Ayuko pa rin";
-            } 
-            else if (question === "Awa nalang?") {
-                document.getElementById("follow-up").style.display = "none";
-                document.getElementById("crying-cat").style.display = "block";
-            }
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
