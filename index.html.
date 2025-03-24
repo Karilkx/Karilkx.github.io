@@ -17,7 +17,8 @@
         <button class="button" id="option2" onclick="option2Click()"></button>
     </div>
 
-    <img id="crying-cat" src="https://i.pinimg.com/originals/41/84/ed/4184ed84c5154640cb94ff825484848b.jpg" alt="Crying Cat">
+    <!-- ✅ Gumamit ng LOCAL IMAGE sa parehong folder -->
+    <img id="crying-cat" src="crying-cat.jpg" alt="Crying Cat">
 
     <script src="script.js"></script>
 </body>
