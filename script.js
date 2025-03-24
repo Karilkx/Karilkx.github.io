@@ -15,23 +15,20 @@ function firstNo() {
 }
 
 function option1Click() {
-    alert("Yay! 😍");
+    alert("NAAWA KADIN 🙏");
 }
 
 function option2Click() {
     let question = document.getElementById("follow-up-question").innerText;
+    let cryingCat = document.getElementById("crying-cat");
 
-    if (question === "Pramis?") {
+    if (question === "Awa nalang?") {
         document.getElementById("follow-up").style.display = "none";
-        document.getElementById("crying-cat").style.display = "block";
+        cryingCat.style.display = "block";  // ✅ SHOW IMAGE  
     } 
     else if (question === "Pls?") {
         document.getElementById("follow-up-question").innerText = "Awa nalang?";
         document.getElementById("option1").innerText = "Fine...";
         document.getElementById("option2").innerText = "Ayuko pa rin";
-    } 
-    else if (question === "Awa nalang?") {
-        document.getElementById("follow-up").style.display = "none";
-        document.getElementById("crying-cat").style.display = "block";
     }
 }
