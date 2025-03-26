@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>May I Court You?</title>
+    <title>???</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2 id="question">May I court you?</h2>
-    <button class="button" onclick="firstYes()">Yes</button>
-    <button class="button" onclick="firstNo()">No</button>
+    <div class="container">
+        <h2 id="question" class="glitch">May I court you?</h2>
+        <div class="buttons">
+            <button class="button" id="yes" onclick="firstYes()">Yes</button>
+            <button class="button" id="no" onclick="firstNo()">No</button>
+        </div>
+    </div>
 
     <div id="follow-up" style="display: none;">
-        <h2 id="follow-up-question"></h2>
+        <h2 id="follow-up-question" class="glitch"></h2>
         <button class="button" id="option1" onclick="option1Click()"></button>
         <button class="button" id="option2" onclick="option2Click()"></button>
     </div>
 
-    <!-- ✅ Gumamit ng LOCAL IMAGE sa parehong folder -->
-    <img id="crying-cat" src="crying-cat.jpg" alt="Crying Cat">
+    <img id="crying-cat" src="crying-cat.jpg" alt="Crying Cat" style="display: none;">
+
+    <audio id="creepy-sound" src="creepy-sound.mp3"></audio>
 
     <script src="script.js"></script>
 </body>
